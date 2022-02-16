@@ -1,0 +1,9 @@
+<ScriptInfo>	
+	<Information>
+		<Name>DiscordMsgPlus</Name>
+		<Description>A Messenger Plus! 5 script for using the Discord HTTP v9 API.
+		Made by appdata@escargot.chat</Description>
+		<AboutUrl>https://github.com/gohoski/DiscordMsgPlus</AboutUrl>
+		<Version>0.0.1</Version>
+	</Information>
+</ScriptInfo>
