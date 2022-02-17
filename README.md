@@ -48,7 +48,7 @@ Sends an image in the channel. `Txt` is a comment to the message, `Img` is the p
 ```js
 Discord.ImgBBKey = 'api_key_goes_here';
 ```
-This function actually creaetes an embed with an image URL from ImgBB. It also can only send very small image files, as I'm too lazy to not put it in the GET parameters, eww.
+This function actually creates an embed with an image URL from ImgBB. It also can only send very small image files, as I'm too lazy to not put it in the GET parameters, eww.
 
 Example:
 ```js
