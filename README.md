@@ -8,7 +8,7 @@ MsgPlus.LoadScriptFile('../DiscordMsgPlus/DiscordMsgPlus.js');
 ```
 Every function will be loaded under the `Discord` object. Keep in mind that the users of your script have to install DiscordMsgPlus.
 ## `Discord` object
-### `Login(Token)`
+### `Login(Token: string)`
 Save the token into another global variable called `Token`.
 
 Example:
@@ -24,14 +24,14 @@ Example:
 var Channel = Discord.GetChannel('932273155496624179');
 ```
 ## `Channel` object
-### `SendMsg(Msg)`
+### `SendMsg(Msg: string)`
 Sends a message in the current channel.
 
 Example:
 ```js
-Channel.SendMsg('Hello! This message was sended using DiscordMsgPlus.')
+Channel.SendMsg('Hello! This message was sent using DiscordMsgPlus.')
 ```
-### `GetMsgs(Amount)`
+### `GetMsgs(Amount: int)`
 Gets certain amount of recent messages in the channel. The amount should be an integer from 1 to 100.
 
 Example:
@@ -43,12 +43,12 @@ for (var i = 0; i < Msgs.length; i++) {
   Debug.Trace(Msgs[i].author.username + ': ' + Msgs[i].content);
 }
 ```
-### `SendImg(Txt, Img)`
+### `SendImg(Txt: string, Img: string)`
 Sends an image in the channel. `Txt` is a comment to the message, `Img` is the path to it. Keep in mind that this function requires a ImgBB API key, which you can get from [here](https://api.imgbb.com/). To include the key, simply just do:
 ```js
 Discord.ImgBBKey = 'api_key_goes_here';
 ```
-This function also can only send very small image files, as I'm too lazy to not to it in the GET parameters, eww.
+This function also can only send very small image files, as I'm too lazy to not put it in the GET parameters, eww.
 
 Example:
 ```js
